@@ -1,0 +1,166 @@
+h1{
+    color: blueviolet;
+}
+.floor {
+    background-color: blueviolet;
+    width: 96%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+     border: 3px solid black; 
+    box-sizing: border-box; 
+
+}
+
+.floorInfo {
+    width:20px;
+    padding: 4px;
+    margin: 4px;
+}
+
+.liftButton {
+    display: flex;
+    flex-direction: column;
+    height: 80px;
+    background-color:navajowhite;
+    margin: 5px;
+}
+
+.up{
+    background-color: yellow;
+    margin: 2px;
+    height:40px ;
+    width: 50px;
+}
+.down{
+    background-color: red;
+    height: 40px;
+    margin: 2px;
+    width: 50px;
+}
+.lifts-container{
+    background-color: blueviolet;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 3px solid black; 
+    box-sizing: border-box;
+     position: relative;
+    flex-wrap: nowrap;
+    /* overflow: hidden; */
+} 
+/* .lift{
+    height: 96px;
+    width: 60px;
+    display: flex;
+    color: aquamarine;
+    background-color: antiquewhite;
+    position: relative;
+    
+} */
+.lift {
+    height: 96px;
+    width: 60px;
+    display: flex;
+    color: aquamarine;
+    background-color: antiquewhite;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .liftLeftDoor,
+  .liftRightDoor {
+    width: 30px;
+    height: 96px;
+    transition: transform 2.5s ease;
+    position: absolute;
+    top: 0;
+  }
+  
+  .liftLeftDoor {
+    background-color: yellow;
+    border-right: 5px solid black;
+    left: 0;
+  }
+  
+  .liftRightDoor {
+    background-color: green;
+    border-left: 5px solid black;
+    right: 0;
+  }
+  
+  .lift.opening .liftLeftDoor {
+    transform: translateX(-30px);
+  }
+  
+  .lift.opening .liftRightDoor {
+    transform: translateX(30px);
+  }
+  
+  .lift.closing .liftLeftDoor,
+  .lift.closing .liftRightDoor {
+    transform: translateX(0);
+  }
+/* //old   */
+/* .liftLeftDoor,
+.liftRightDoor {
+  width: 30px;
+  transition: transform 2.5s ease;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+} 
+.liftLeftDoor{
+    width: 30px;
+    background-color: yellow;
+    border-right: 5px solid black;
+}
+.liftRightDoor{
+    width: 30px;
+    background-color: green;
+    border-left: 5px solid black;
+} 
+
+.lift.opening .liftLeftDoor,
+.lift.opening .liftRightDoor {
+  transform: translateX(-30px);
+}
+
+.lift.closing .liftLeftDoor,
+.lift.closing .liftRightDoor {
+  transform: translateX(0);
+}
+
+ */  /* Styles for the open lift doors */
+/*   .liftDoorsOpen {
+    animation: openDoorsAnimation 2.5s forwards;
+  }
+  
+  /* Keyframes for opening the lift doors */
+  /* @keyframes openDoorsAnimation {
+    0% {
+      width: 30px;
+    }
+    100% {
+      width: 0;
+    }
+  } */ */
+  
+  /* Styles for the lift buttons */
+  .liftButton {
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Optional: Add some padding and margins to make it visually appealing */
+/*   .lift {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  } */
+  
+  /* Optional: Add a background color to the ground floor */
+/* #groundFloor {
+    box-sizing: border-box;
+  } 
+   */
